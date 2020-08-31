@@ -13,6 +13,7 @@
   width: 80px;
   border: 1px solid #aa6817;
   cursor: pointer;
+  border-radius: 10px;
   outline: none;
 }
 
