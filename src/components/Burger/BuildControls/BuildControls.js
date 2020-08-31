@@ -21,9 +21,15 @@ const controls = [
   },
 ];
 
-const BuildControls = ({ ingredientAdded, ingredientRemoved, disabled }) => {
+const BuildControls = ({
+  ingredientAdded,
+  ingredientRemoved,
+  disabled,
+  price,
+}) => {
   return (
     <div className="BuildControls">
+      <p>Current Price: {price}</p>
       {controls.map(control => (
         <BuildControl
           key={control.label}
