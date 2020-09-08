@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Aux from '../../hoc/auxiliary';
-import Toolbar from '../Navigation/Toolbar/Toolbar';
-import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
+import Aux from '../Auxiliary/auxiliary';
+import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
+import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';
 import './Layout.css';
 
 const Layout = props => {
