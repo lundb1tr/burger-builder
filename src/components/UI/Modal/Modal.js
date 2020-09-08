@@ -4,8 +4,9 @@ import Aux from '../../../hoc/Auxiliary/auxiliary';
 import Backdrop from '../Backdrop/Backdrop';
 
 class Modal extends Component {
-  shouldComponentUpdate(nextProps, nextState) {
-    return nextProps.show !== this.props.show;
+  /* Only need to check the show prop to see if we should update the modal */
+  shouldComponentUpdate({ show }) {
+    return show !== this.props.show;
   }
 
   render() {
