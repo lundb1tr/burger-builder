@@ -7,10 +7,12 @@ import './SideDrawer.css';
 
 const SideDrawer = ({ open, closed }) => {
   const attachedClasses = ['SideDrawer', 'Close'];
+
   if (open) {
     attachedClasses.pop();
     attachedClasses.push('Open');
   }
+
   return (
     <Aux>
       <Backdrop show={open} clicked={closed} />

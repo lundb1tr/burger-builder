@@ -10,6 +10,7 @@ const Layout = props => {
   const toggleSideDrawer = prevState => {
     setShowSideDrawer(!prevState);
   };
+
   return (
     <Aux>
       <Toolbar openSideDrawer={() => toggleSideDrawer(showSideDrawer)} />
