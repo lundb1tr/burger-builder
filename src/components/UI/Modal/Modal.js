@@ -5,8 +5,8 @@ import Backdrop from '../Backdrop/Backdrop';
 
 class Modal extends Component {
   /* Only need to check the show prop to see if we should update the modal */
-  shouldComponentUpdate({ show }) {
-    return show !== this.props.show;
+  shouldComponentUpdate({ show, children }) {
+    return show !== this.props.show || children !== this.props.children;
   }
 
   render() {
