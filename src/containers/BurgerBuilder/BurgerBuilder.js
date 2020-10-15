@@ -108,6 +108,7 @@ class BurgerBuilder extends Component {
         )}`
       );
     });
+    queryParams.push(`totalPrice=${this.state.totalPrice}`);
     const queryString = queryParams.join('&');
     this.props.history.push({
       pathname: '/checkout',
