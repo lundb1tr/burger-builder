@@ -49,7 +49,7 @@ class ContactData extends Component {
 
   render() {
     /* If we're currently posting show the spinner icon, otherwise show the form */
-    let form = this.state.loading ? (
+    const form = this.state.loading ? (
       <Spinner />
     ) : (
       <form className="Form">
