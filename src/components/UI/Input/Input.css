@@ -1,0 +1,27 @@
+.FormInput {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.FormLabel {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.FormInputElement {
+  outline: none;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font: inherit;
+  padding: 6px 10px;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.FormInputElement:focus {
+  outline: none;
+  background-color: #ccc;
+}
